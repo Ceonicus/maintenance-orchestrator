@@ -1,0 +1,30 @@
+[0.552s] Invoking command in '/home/leonicus/maintenance_ws/src/maintenance_orchestrator': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/leonicus/maintenance_ws/build/maintenance_orchestrator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/maintenance_interfaces/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/cover_removal_server/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/switch_tool_server/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/maintenance_orchestrator build --build-base /home/leonicus/maintenance_ws/build/maintenance_orchestrator/build install --record /home/leonicus/maintenance_ws/build/maintenance_orchestrator/install.log --install-scripts $base/lib/maintenance_orchestrator --single-version-externally-managed install_data
+[0.673s] running egg_info
+[0.680s] writing ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/PKG-INFO
+[0.680s] writing dependency_links to ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/dependency_links.txt
+[0.680s] writing entry points to ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/entry_points.txt
+[0.680s] writing requirements to ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/requires.txt
+[0.680s] writing top-level names to ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/top_level.txt
+[0.695s] reading manifest file '../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/SOURCES.txt'
+[0.695s] writing manifest file '../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/SOURCES.txt'
+[0.695s] running build
+[0.695s] running build_py
+[0.695s] copying maintenance_orchestrator/server.py -> /home/leonicus/maintenance_ws/build/maintenance_orchestrator/build/lib/maintenance_orchestrator
+[0.695s] running install
+[0.698s] running install_lib
+[0.705s] copying /home/leonicus/maintenance_ws/build/maintenance_orchestrator/build/lib/maintenance_orchestrator/server.py -> /home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages/maintenance_orchestrator
+[0.706s] byte-compiling /home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages/maintenance_orchestrator/server.py to server.cpython-312.pyc
+[0.706s]   File "/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages/maintenance_orchestrator/server.py", line 175
+[0.706s]     self.get_logger().info(
+[0.707s]                           ^
+[0.707s] SyntaxError: '(' was never closed
+[0.707s] 
+[0.707s] running install_data
+[0.707s] running install_egg_info
+[0.715s] removing '/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages/maintenance_orchestrator-0.0.0-py3.12.egg-info' (and everything under it)
+[0.715s] Copying ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info to /home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages/maintenance_orchestrator-0.0.0-py3.12.egg-info
+[0.715s] running install_scripts
+[0.769s] Installing client script to /home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/maintenance_orchestrator
+[0.770s] Installing server script to /home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/maintenance_orchestrator
+[0.770s] writing list of installed files to '/home/leonicus/maintenance_ws/build/maintenance_orchestrator/install.log'
+[0.787s] Invoked command in '/home/leonicus/maintenance_ws/src/maintenance_orchestrator' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/leonicus/maintenance_ws/build/maintenance_orchestrator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/maintenance_interfaces/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/cover_removal_server/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/switch_tool_server/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/maintenance_orchestrator build --build-base /home/leonicus/maintenance_ws/build/maintenance_orchestrator/build install --record /home/leonicus/maintenance_ws/build/maintenance_orchestrator/install.log --install-scripts $base/lib/maintenance_orchestrator --single-version-externally-managed install_data

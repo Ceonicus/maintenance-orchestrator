@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "maintenance_interfaces/action/SimpleTask_Goal",
+      "fields": [
+        {
+          "name": "task_name",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "maintenance_interfaces/action/SimpleTask_Goal",
+      "hash_string": "RIHS01_65e6ebc2240a07e4c7d8d58f454fa64f70f67aff25d9357249902124737e9364"
+    }
+  ]
+}

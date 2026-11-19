@@ -1,0 +1,25 @@
+[0.821s] Invoking command in '/home/leonicus/maintenance_ws/src/maintenance_orchestrator': AMENT_PREFIX_PATH=/home/leonicus/maintenance_ws/install/maintenance_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leonicus/maintenance_ws/install/maintenance_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/leonicus/maintenance_ws/install/maintenance_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leonicus/maintenance_ws/build/maintenance_orchestrator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/maintenance_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/maintenance_orchestrator build --build-base /home/leonicus/maintenance_ws/build/maintenance_orchestrator/build install --record /home/leonicus/maintenance_ws/build/maintenance_orchestrator/install.log --install-scripts $base/lib/maintenance_orchestrator --single-version-externally-managed install_data
+[1.056s] running egg_info
+[1.068s] writing ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/PKG-INFO
+[1.068s] writing dependency_links to ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/dependency_links.txt
+[1.069s] writing entry points to ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/entry_points.txt
+[1.069s] writing requirements to ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/requires.txt
+[1.069s] writing top-level names to ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/top_level.txt
+[1.095s] reading manifest file '../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/SOURCES.txt'
+[1.095s] writing manifest file '../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info/SOURCES.txt'
+[1.095s] running build
+[1.095s] running build_py
+[1.095s] copying maintenance_orchestrator/server.py -> /home/leonicus/maintenance_ws/build/maintenance_orchestrator/build/lib/maintenance_orchestrator
+[1.095s] running install
+[1.100s] running install_lib
+[1.113s] copying /home/leonicus/maintenance_ws/build/maintenance_orchestrator/build/lib/maintenance_orchestrator/server.py -> /home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages/maintenance_orchestrator
+[1.114s] byte-compiling /home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages/maintenance_orchestrator/server.py to server.cpython-312.pyc
+[1.115s] running install_data
+[1.115s] running install_egg_info
+[1.129s] removing '/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages/maintenance_orchestrator-0.0.0-py3.12.egg-info' (and everything under it)
+[1.129s] Copying ../../build/maintenance_orchestrator/maintenance_orchestrator.egg-info to /home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages/maintenance_orchestrator-0.0.0-py3.12.egg-info
+[1.129s] running install_scripts
+[1.219s] Installing client script to /home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/maintenance_orchestrator
+[1.219s] Installing server script to /home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/maintenance_orchestrator
+[1.219s] writing list of installed files to '/home/leonicus/maintenance_ws/build/maintenance_orchestrator/install.log'
+[1.261s] Invoked command in '/home/leonicus/maintenance_ws/src/maintenance_orchestrator' returned '0': AMENT_PREFIX_PATH=/home/leonicus/maintenance_ws/install/maintenance_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leonicus/maintenance_ws/install/maintenance_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/leonicus/maintenance_ws/install/maintenance_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leonicus/maintenance_ws/build/maintenance_orchestrator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/maintenance_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/maintenance_orchestrator build --build-base /home/leonicus/maintenance_ws/build/maintenance_orchestrator/build install --record /home/leonicus/maintenance_ws/build/maintenance_orchestrator/install.log --install-scripts $base/lib/maintenance_orchestrator --single-version-externally-managed install_data

@@ -1,0 +1,552 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession",
+      "fields": [
+        {
+          "name": "goal",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_Goal"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "result",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_Result"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_Feedback"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "send_goal_service",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "get_result_service",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult"
+          },
+          "default_value": ""
+        },
+        {
+          "name": "feedback_message",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_FeedbackMessage"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "builtin_interfaces/msg/Time",
+        "fields": [
+          {
+            "name": "sec",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "nanosec",
+            "type": {
+              "type_id": 7,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_Feedback",
+        "fields": [
+          {
+            "name": "current_floor",
+            "type": {
+              "type_id": 6,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "current_step",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "progress",
+            "type": {
+              "type_id": 10,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_FeedbackMessage",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "feedback",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_Feedback"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult",
+        "fields": [
+          {
+            "name": "request_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Response"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "event_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Event"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Response",
+        "fields": [
+          {
+            "name": "status",
+            "type": {
+              "type_id": 2,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "result",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_Result"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_Goal",
+        "fields": [
+          {
+            "name": "service_floors",
+            "type": {
+              "type_id": 150,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_Result",
+        "fields": [
+          {
+            "name": "success",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "report_path",
+            "type": {
+              "type_id": 17,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal",
+        "fields": [
+          {
+            "name": "request_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Response"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "event_message",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Event"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Event",
+        "fields": [
+          {
+            "name": "info",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "service_msgs/msg/ServiceEventInfo"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "request",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Request"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "response",
+            "type": {
+              "type_id": 97,
+              "capacity": 1,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Response"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Request",
+        "fields": [
+          {
+            "name": "goal_id",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "unique_identifier_msgs/msg/UUID"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "goal",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "maintenance_interfaces/action/MaintenanceSession_Goal"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Response",
+        "fields": [
+          {
+            "name": "accepted",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "service_msgs/msg/ServiceEventInfo",
+        "fields": [
+          {
+            "name": "event_type",
+            "type": {
+              "type_id": 3,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "stamp",
+            "type": {
+              "type_id": 1,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": "builtin_interfaces/msg/Time"
+            },
+            "default_value": ""
+          },
+          {
+            "name": "client_gid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "sequence_number",
+            "type": {
+              "type_id": 8,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      },
+      {
+        "type_name": "unique_identifier_msgs/msg/UUID",
+        "fields": [
+          {
+            "name": "uuid",
+            "type": {
+              "type_id": 51,
+              "capacity": 16,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession",
+      "hash_string": "RIHS01_7d3610d0b0145828861e1256e3709b72e52e7f0a72dbbc317c63976bfa7d334b"
+    },
+    {
+      "type_name": "builtin_interfaces/msg/Time",
+      "hash_string": "RIHS01_b106235e25a4c5ed35098aa0a61a3ee9c9b18d197f398b0e4206cea9acf9c197"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_Feedback",
+      "hash_string": "RIHS01_ae6603c29a76a40ab7e63f5970a0f9e05578f32c20610a20d82d46d24fcb81bc"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_FeedbackMessage",
+      "hash_string": "RIHS01_3f3dfbf3ccd158d57da0f01e127de5d1b9b0ea8624e0766ed17914a3ab899faf"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult",
+      "hash_string": "RIHS01_7550d903ee8373ccd8d2fa905638fca20585801fbfc2304931fa1a46c84efab9"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Event",
+      "hash_string": "RIHS01_405d705d2063298e7c3ec576188a841d7a7a87dd638d7da21a3c9375b3839ed9"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Request",
+      "hash_string": "RIHS01_32b7668bab2dbb2778a57414bd83c5869f843a7742117ed0df1b149d9bcfc275"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_GetResult_Response",
+      "hash_string": "RIHS01_fa7b74061f1cc9aab7954cccf54cf1d931bd8645d3531c89daf1ba72bca899fa"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_Goal",
+      "hash_string": "RIHS01_0d2ec33c5aa9cbd2987cfe106a136e0138e02e90c0aa8c19aa1d4263bd4fc276"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_Result",
+      "hash_string": "RIHS01_d85fc72af3ef489018506d8a73283bd95b7364c1cfdf1a5ebc63226a46a3b1b4"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal",
+      "hash_string": "RIHS01_9451d5b0f7162f6c69787b6754512be5d2080c78bb371a178560cbbe02e8d78e"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Event",
+      "hash_string": "RIHS01_bedd7cdd8d1b74ca9e16feb79e8c1562d3871d678ba001c203ffb860d87b70c5"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Request",
+      "hash_string": "RIHS01_671174476dbb6f324f2dd274833b9aea1c9badd9ea1c1d96991ea9089810b779"
+    },
+    {
+      "type_name": "maintenance_interfaces/action/MaintenanceSession_SendGoal_Response",
+      "hash_string": "RIHS01_d849b24d953f6f924b557cc662989a773793a1153c640bf941e0157bd6c861f3"
+    },
+    {
+      "type_name": "service_msgs/msg/ServiceEventInfo",
+      "hash_string": "RIHS01_41bcbbe07a75c9b52bc96bfd5c24d7f0fc0a08c0cb7921b3373c5732345a6f45"
+    },
+    {
+      "type_name": "unique_identifier_msgs/msg/UUID",
+      "hash_string": "RIHS01_1b8e8aca958cbea28fe6ef60bf6c19b683c97a9ef60bb34752067d0f2f7ab437"
+    }
+  ]
+}

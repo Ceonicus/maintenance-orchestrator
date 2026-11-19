@@ -1,0 +1,14 @@
+{
+  "package_name": "maintenance_interfaces",
+  "output_dir": "/home/leonicus/maintenance_ws/build/maintenance_interfaces/rosidl_generator_type_description/maintenance_interfaces",
+  "idl_tuples": [
+    "/home/leonicus/maintenance_ws/build/maintenance_interfaces/rosidl_adapter/maintenance_interfaces:action/SimpleTask.idl",
+    "/home/leonicus/maintenance_ws/build/maintenance_interfaces/rosidl_adapter/maintenance_interfaces:action/MaintenanceSession.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}

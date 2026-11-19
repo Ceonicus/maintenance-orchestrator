@@ -1,0 +1,29 @@
+floors:
+  - 20
+  - 18
+  - 16
+  - 14
+
+steps:
+
+  - SwitchToSuction
+
+  - ContactBoxPerception
+
+  - CoverRemoval
+
+  - SwitchToScrewdriver
+
+  - Unscrew
+
+  - CleanContactArm
+
+  - InstallScrews
+
+  - SwitchToSuction
+
+  - CoverPlacement
+
+  - DoorBarCleaning
+
+  - DoorSillCleaning

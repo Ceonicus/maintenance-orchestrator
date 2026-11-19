@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/cover_removal_server/cover_removal_server.egg-info/PKG-INFO
+../../build/cover_removal_server/cover_removal_server.egg-info/SOURCES.txt
+../../build/cover_removal_server/cover_removal_server.egg-info/dependency_links.txt
+../../build/cover_removal_server/cover_removal_server.egg-info/entry_points.txt
+../../build/cover_removal_server/cover_removal_server.egg-info/requires.txt
+../../build/cover_removal_server/cover_removal_server.egg-info/top_level.txt
+../../build/cover_removal_server/cover_removal_server.egg-info/zip-safe
+cover_removal_server/__init__.py
+cover_removal_server/client.py
+cover_removal_server/server.py
+resource/cover_removal_server
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

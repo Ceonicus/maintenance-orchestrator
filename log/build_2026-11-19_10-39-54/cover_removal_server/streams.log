@@ -1,0 +1,23 @@
+[0.528s] Invoking command in '/home/leonicus/maintenance_ws/src/cover_removal_server': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/leonicus/maintenance_ws/build/cover_removal_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leonicus/maintenance_ws/install/cover_removal_server/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/maintenance_interfaces/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/switch_tool_server/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cover_removal_server build --build-base /home/leonicus/maintenance_ws/build/cover_removal_server/build install --record /home/leonicus/maintenance_ws/build/cover_removal_server/install.log --install-scripts $base/lib/switch_tool_server --single-version-externally-managed install_data
+[0.661s] running egg_info
+[0.668s] writing ../../build/cover_removal_server/cover_removal_server.egg-info/PKG-INFO
+[0.668s] writing dependency_links to ../../build/cover_removal_server/cover_removal_server.egg-info/dependency_links.txt
+[0.668s] writing entry points to ../../build/cover_removal_server/cover_removal_server.egg-info/entry_points.txt
+[0.668s] writing requirements to ../../build/cover_removal_server/cover_removal_server.egg-info/requires.txt
+[0.668s] writing top-level names to ../../build/cover_removal_server/cover_removal_server.egg-info/top_level.txt
+[0.683s] reading manifest file '../../build/cover_removal_server/cover_removal_server.egg-info/SOURCES.txt'
+[0.683s] writing manifest file '../../build/cover_removal_server/cover_removal_server.egg-info/SOURCES.txt'
+[0.683s] running build
+[0.683s] running build_py
+[0.683s] running install
+[0.686s] running install_lib
+[0.694s] running install_data
+[0.694s] copying resource/cover_removal_server -> /home/leonicus/maintenance_ws/install/cover_removal_server/share/ament_index/resource_index/packages
+[0.694s] copying package.xml -> /home/leonicus/maintenance_ws/install/cover_removal_server/share/cover_removal_server
+[0.694s] running install_egg_info
+[0.702s] Copying ../../build/cover_removal_server/cover_removal_server.egg-info to /home/leonicus/maintenance_ws/install/cover_removal_server/lib/python3.12/site-packages/cover_removal_server-0.0.0-py3.12.egg-info
+[0.702s] running install_scripts
+[0.758s] Installing client script to /home/leonicus/maintenance_ws/install/cover_removal_server/lib/switch_tool_server
+[0.759s] Installing server script to /home/leonicus/maintenance_ws/install/cover_removal_server/lib/switch_tool_server
+[0.759s] writing list of installed files to '/home/leonicus/maintenance_ws/build/cover_removal_server/install.log'
+[0.779s] Invoked command in '/home/leonicus/maintenance_ws/src/cover_removal_server' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/leonicus/maintenance_ws/build/cover_removal_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/leonicus/maintenance_ws/install/cover_removal_server/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/maintenance_interfaces/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/switch_tool_server/lib/python3.12/site-packages:/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cover_removal_server build --build-base /home/leonicus/maintenance_ws/build/cover_removal_server/build install --record /home/leonicus/maintenance_ws/build/cover_removal_server/install.log --install-scripts $base/lib/switch_tool_server --single-version-externally-managed install_data

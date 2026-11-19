@@ -1,0 +1,3 @@
+[console_scripts]
+client = switch_tool_server.client:main
+server = switch_tool_server.server:main

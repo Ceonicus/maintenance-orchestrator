@@ -1,0 +1,7 @@
+{
+  "package_name": "maintenance_interfaces",
+  "non_idl_tuples": [
+    "/home/leonicus/maintenance_ws/src/maintenance_interfaces:action/SimpleTask.action",
+    "/home/leonicus/maintenance_ws/src/maintenance_interfaces:action/MaintenanceSession.action"
+  ]
+}

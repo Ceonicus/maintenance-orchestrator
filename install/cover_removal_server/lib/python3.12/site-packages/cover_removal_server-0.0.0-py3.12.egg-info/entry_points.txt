@@ -1,0 +1,3 @@
+[console_scripts]
+client = cover_removal_server.client:main
+server = cover_removal_server.server:main

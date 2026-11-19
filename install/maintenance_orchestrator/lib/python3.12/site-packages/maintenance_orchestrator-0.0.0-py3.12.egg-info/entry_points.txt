@@ -1,0 +1,3 @@
+[console_scripts]
+client = maintenance_orchestrator.client:main
+server = maintenance_orchestrator.server:main

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from maintenance_interfaces/action/SimpleTask.action
+// generated code does not contain a copyright notice
+
+
+module maintenance_interfaces {
+  module action {
+    struct SimpleTask_Goal {
+      string task_name;
+    };
+    struct SimpleTask_Result {
+      boolean success;
+
+      string message;
+    };
+    struct SimpleTask_Feedback {
+      string status;
+    };
+  };
+};

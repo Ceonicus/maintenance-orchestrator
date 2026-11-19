@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from maintenance_interfaces/action/MaintenanceSession.action
+// generated code does not contain a copyright notice
+
+
+module maintenance_interfaces {
+  module action {
+    struct MaintenanceSession_Goal {
+      sequence<int32> service_floors;
+    };
+    struct MaintenanceSession_Result {
+      boolean success;
+
+      string report_path;
+    };
+    struct MaintenanceSession_Feedback {
+      int32 current_floor;
+
+      string current_step;
+
+      float progress;
+    };
+  };
+};

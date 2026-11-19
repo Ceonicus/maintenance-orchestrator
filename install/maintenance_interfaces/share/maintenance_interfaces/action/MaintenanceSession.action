@@ -1,0 +1,8 @@
+int32[] service_floors
+---
+bool success
+string report_path
+---
+int32 current_floor
+string current_step
+float32 progress

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "maintenance_interfaces__rs",
+		"source" : "/home/leonicus/maintenance_ws/build/maintenance_interfaces/maintenance_interfaces__rs"
+	}
+}
