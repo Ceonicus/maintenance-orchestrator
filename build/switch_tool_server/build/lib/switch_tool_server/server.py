@@ -53,7 +53,11 @@ class SwitchToolServer(Node):
         result = SimpleTask.Result()
 
         result.success = True
-        result.message = f"{task} completed"
+        result.message = f"{task} completed successfully"
+
+        self.get_logger().info(
+            result.message
+        )
 
         return result
 

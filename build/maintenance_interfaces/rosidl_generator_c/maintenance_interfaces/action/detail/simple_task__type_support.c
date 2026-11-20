@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
 #include "maintenance_interfaces/action/detail/simple_task__struct.h"
 #include "maintenance_interfaces/action/detail/simple_task__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "maintenance_interfaces/action/detail/simple_task__functions.h"
 
 #ifdef __cplusplus

@@ -1,5 +1,0 @@
-  File "/home/leonicus/maintenance_ws/install/maintenance_orchestrator/lib/python3.12/site-packages/maintenance_orchestrator/server.py", line 175
-    self.get_logger().info(
-                          ^
-SyntaxError: '(' was never closed
-

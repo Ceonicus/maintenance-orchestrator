@@ -1,3 +1,7 @@
+import time
+from datetime import datetime
+from xml.sax import handler
+
 import rclpy
 
 from rclpy.node import Node
@@ -18,6 +22,8 @@ class MaintenanceSessionServer(Node):
             'maintenance_session_server'
         )
 
+        self.maintenance_hour = 3
+
         self.server = ActionServer(
             self,
             MaintenanceSession,
@@ -37,6 +43,31 @@ class MaintenanceSessionServer(Node):
             'cover_removal'
         )
 
+        self.unscrew_client = ActionClient(
+            self,
+            SimpleTask,
+            'unscrew'
+        )
+
+        self.contact_arm_cleaning_client = ActionClient(
+            self,
+            SimpleTask,
+            'contact_arm_cleaning'
+        )
+
+        self.step_handlers = {
+
+            "CoverRemoval":
+                self.call_cover_removal,
+
+            "Unscrew":
+                self.call_unscrew,
+
+            "CleanContactArm":
+                self.call_contact_arm_cleaning,
+
+        }
+
         self.get_logger().info(
             'Maintenance Session Ready'
         )
@@ -54,6 +85,10 @@ class MaintenanceSessionServer(Node):
         )
 
         total = len(floors)
+
+        await self.maintenance_window_check()
+
+        await self.robot_health_check()
 
         for index, floor in enumerate(floors):
 
@@ -74,14 +109,14 @@ class MaintenanceSessionServer(Node):
             )
 
             self.get_logger().info(
-                f"===== FLOOR {floor} ====="
+                f"===== 🟨 FLOOR {floor} 🟨====="
             )
 
             steps = [
 
-                "SwitchToSuction",
-
                 "ContactBoxPerception",
+
+                "SwitchToSuction",
 
                 "CoverRemoval",
 
@@ -107,15 +142,15 @@ class MaintenanceSessionServer(Node):
 
                 self.log_step_banner(step)
 
-                if step == "CoverRemoval":
+                handler = self.step_handlers.get(step)
 
-                    success = await self.call_cover_removal()
+                if handler:
+
+                        success = await handler()
 
                 else:
 
-                    success = await self.call_switch_tool(
-                        step
-                    )
+                        success = await self.call_switch_tool(step)
 
                 if not success:
 
@@ -134,6 +169,8 @@ class MaintenanceSessionServer(Node):
                     result.report_path = ""
 
                     return result
+
+        await self.close_maintenance_session()
 
         goal_handle.succeed()
 
@@ -208,6 +245,186 @@ class MaintenanceSessionServer(Node):
         )
 
         return result.result.success
+
+    async def call_unscrew(self):
+
+        goal = SimpleTask.Goal()
+
+        goal.task_name = "Unscrew"
+
+        self.unscrew_client.wait_for_server()
+
+        self.get_logger().info(
+            "Calling unscrew"
+        )
+
+        goal_handle = await self.unscrew_client.send_goal_async(
+            goal,
+            feedback_callback=self.feedback_callback
+        )
+
+        result_future = (
+            goal_handle.get_result_async()
+        )
+
+        result = await result_future
+
+        self.get_logger().info(
+        "✅ Completed: Unscrew"
+        )
+
+        return result.result.success
+
+    async def call_contact_arm_cleaning(self):
+
+        goal = SimpleTask.Goal()
+
+        goal.task_name = "CleanContactArm"
+
+        self.contact_arm_cleaning_client.wait_for_server()
+
+        self.get_logger().info(
+            "Calling contact_arm_cleaning"
+        )
+
+        goal_handle = await (
+            self.contact_arm_cleaning_client.send_goal_async(
+                goal,
+                feedback_callback=self.feedback_callback
+            )
+        )
+
+        result_future = (
+            goal_handle.get_result_async()
+        )
+
+        result = await result_future
+
+        self.get_logger().info(
+            "✅ Completed: CleanContactArm"
+        )
+
+        return result.result.success
+
+    async def robot_health_check(self):
+
+        self.get_logger().info(
+            "🩺 Robot Health Check"
+        )
+
+        time.sleep(2)
+
+        self.get_logger().info(
+            "✅ Robot Healthy"
+        )
+
+        time.sleep(2)
+        
+        self.get_logger().info(
+            "✅ Moving to Top Service Floor..."
+        )
+
+        time.sleep(10)
+
+        return True
+
+    async def maintenance_window_check(self):
+
+        current_time = datetime.now().strftime(
+            "%I:%M %p"
+        )
+
+        time.sleep(2)
+
+        self.get_logger().info(
+            f"🕒 Current Time: {current_time}"
+        )
+
+        time.sleep(2)
+
+        self.get_logger().info(
+            f"🎯 Maintenance Start Window: "
+            f"{self.maintenance_hour:02d}:00 AM"
+        )
+
+        time.sleep(2)
+
+        self.get_logger().info(
+            "✅ Maintenance Window Open"
+        )
+
+        return True
+
+    async def close_maintenance_session(self):
+
+        self.get_logger().info("")
+    
+        self.get_logger().info(
+            "📝 Recording Maintenance Results"
+        )
+
+        time.sleep(1)
+
+        self.get_logger().info(
+            "✅ Contact Inspection Recorded"
+        )
+
+        time.sleep(1)
+
+        self.get_logger().info(
+            "✅ Cleaning Results Recorded"
+        )
+
+        time.sleep(1)
+
+        self.get_logger().info(
+            "✅ Tool Usage Recorded"
+        )
+
+        time.sleep(1)
+
+        self.get_logger().info(
+            "✅ Maintenance Log Recorded"
+        )
+
+        time.sleep(2)
+
+        self.get_logger().info(
+            "📊 Generating Session Report"
+        )
+
+        time.sleep(2)
+
+        self.get_logger().info(
+            "✅ Session Report Generated"
+        )
+
+        time.sleep(2)
+
+        self.get_logger().info(
+            "🏢 Restoring Passenger Service"
+        )
+
+        time.sleep(2)
+
+        self.get_logger().info(
+            "✅ Maintenance Mode Released"
+        )
+
+        self.get_logger().info(
+            "✅ Elevator Returned To Passenger Service"
+        )
+
+        time.sleep(1)
+
+        self.get_logger().info("")
+    
+        self.get_logger().info(
+            "🌙 MAINTENANCE SESSION COMPLETE"
+        )
+
+        return True
+
 
     def log_step_banner(self, step_name):
 

@@ -36,10 +36,10 @@ class MaintenanceClient(Node):
         )
 
         goal.service_floors = [
-            20,
-            18,
-            16,
-            14
+            4,
+            3,
+            2,
+            1
         ]
 
         self.client.wait_for_server()

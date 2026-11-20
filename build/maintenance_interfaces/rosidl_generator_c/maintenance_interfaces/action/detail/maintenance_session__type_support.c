@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "maintenance_interfaces/action/detail/maintenance_session__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "maintenance_interfaces/action/detail/maintenance_session__functions.h"
 #include "maintenance_interfaces/action/detail/maintenance_session__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"
