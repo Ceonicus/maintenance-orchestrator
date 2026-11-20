@@ -358,6 +358,14 @@ class MaintenanceSessionServer(Node):
     async def close_maintenance_session(self):
 
         self.get_logger().info("")
+
+        self.get_logger().info(
+                "🟨 ALL MAINTENANCE ACTIVITIES COMPLETED 🟨"
+            )
+        
+        self.get_logger().info("")
+
+        time.sleep(3)
     
         self.get_logger().info(
             "📝 Recording Maintenance Results"
